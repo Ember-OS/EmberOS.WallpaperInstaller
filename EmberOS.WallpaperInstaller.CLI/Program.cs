@@ -26,6 +26,7 @@ class Program
         if (string.IsNullOrEmpty(imageUrl))
         {
             Console.WriteLine("Invalid URL format.");
+            Console.ReadLine();
             return;
         }
 
@@ -60,6 +61,7 @@ class Program
         {
             newProtocolUrl = newProtocolUrl.Substring(0, newProtocolUrl.Length - 1);
         }
+        Console.WriteLine($"{newProtocolUrl}");
         return newProtocolUrl;
     }
 
